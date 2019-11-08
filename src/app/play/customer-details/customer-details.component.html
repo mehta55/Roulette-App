@@ -1,0 +1,18 @@
+<div class="card w-35">
+    <div class="card-header">
+        <h5>Welcome!</h5>
+        <h3><b>{{customer.name}}</b></h3>
+
+    </div>
+    <div class="card-body">
+
+        <div style="float: left;">
+            <h1 class="card-text">Balance : {{customer.balance}}</h1>
+        </div>
+        <div style="float: right;">
+            <button class="btn btn-link" style="text-decoration: none;padding: 10px;"><span
+                    (click)="refreshBalance()" style='font-size:20px;'>&#8635;</span></button>
+        </div>
+
+    </div>
+</div>

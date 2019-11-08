@@ -1,0 +1,9 @@
+
+body{
+    background-image: url("../../assets/img/roulette-background.png");
+    background-repeat: no-repeat;
+    background-size: 100%;
+    
+    background-position-y: -10ch;
+}
+

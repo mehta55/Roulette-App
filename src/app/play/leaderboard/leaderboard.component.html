@@ -1,0 +1,58 @@
+<div class="card w-30">
+    <div class="card-header" style="text-align: center;">
+        <div style="float: left;">
+            <h2> LEADERBOARD </h2>
+        </div>
+        <div style="float: right;">
+            <button class="btn btn-link" style="text-decoration: none;"><span
+                   (click)="refreshLeaderBoard()" style='font-size:20px;'>&#8635;</span></button>
+        </div>
+
+    </div>
+    <div class="card-body">
+
+        <table class="table">
+            <thead>
+                <tr>
+                    <th scope="col">Rank</th>
+                    <th scope="col">Name</th>
+                    <th scope="col">Coins</th>
+
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <th scope="row">1</th>
+                    <td>{{!leaderBoard[0] ? leaderBoard[0] : leaderBoard[0].name }}</td>
+                    <td>{{!leaderBoard[0] ? leaderBoard[0] : leaderBoard[0].balance}}</td>
+
+                </tr>
+                <tr>
+                    <th scope="row">2</th>
+                    <td>{{!leaderBoard[1] ? leaderBoard[1] : leaderBoard[1].name}}</td>
+                    <td>{{!leaderBoard[1] ? leaderBoard[1] : leaderBoard[1].balance}}</td>
+
+                </tr>
+                <tr>
+                    <th scope="row">3</th>
+                    <td>{{!leaderBoard[2] ? leaderBoard[2] : leaderBoard[2].name}}</td>
+                    <td>{{!leaderBoard[2] ? leaderBoard[2] : leaderBoard[2].balance}}</td>
+
+                </tr>
+                <tr>
+                    <th scope="row">4</th>
+                    <td>{{!leaderBoard[3] ? leaderBoard[3] : leaderBoard[3].name}}</td>
+                    <td>{{!leaderBoard[3] ? leaderBoard[3] : leaderBoard[3].balance}}</td>
+
+                </tr>
+                <tr>
+                    <th scope="row">5</th>
+                    <td>{{!leaderBoard[4] ? leaderBoard[4] : leaderBoard[4].name}}</td>
+                    <td>{{!leaderBoard[4] ? leaderBoard[4] : leaderBoard[4].balance}}</td>
+
+                </tr>
+            </tbody>
+        </table>
+
+    </div>
+</div>
