@@ -3,6 +3,9 @@ import { CustomerService } from 'src/services/customer.service';
 import { Customer } from 'src/models/Customer';
 import { PlayRequest } from 'src/models/PlayRequest';
 import { PlayService } from 'src/services/play.service';
+import { AuthService } from '../../auth.service'
+import { Router } from '@angular/router';
+
 
 @Component({
   selector: 'app-roulette',
@@ -19,13 +22,16 @@ export class RouletteComponent implements OnInit {
   reusltModal_footer_primaryBtn_txt: string;
   reusltModal_footer_secondaryBtn_txt: string;
 
-  constructor(private customerSvc: CustomerService, private playSvn: PlayService) {
+  constructor(private router: Router, private authSvc: AuthService, private customerSvc: CustomerService, private playSvn: PlayService) {
     this.reset();
 
   }
 
   play() {
-    this.playSvn.play(this.playrequest)
+    if(!this.authSvc.loggedIn()) {
+      this.router.navigate(['/login']);
+    } else {
+      this.playSvn.play(this.playrequest)
       .subscribe((playResponse) => {
         
         if (playResponse.success) {
@@ -39,6 +45,7 @@ export class RouletteComponent implements OnInit {
           console.log(error);
         });
 
+    }
 
   }
 

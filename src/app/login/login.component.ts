@@ -25,11 +25,12 @@ export class LoginComponent implements OnInit {
   }
 
   logIn() {
-    this.authSvc.login(this.coustomerId)
+    
+    if(!this.authSvc.loggedIn()) { 
+      this.authSvc.login(this.coustomerId)
       .subscribe((response) => {
         if (response.success) {
-          // localStorage.setItem('token', this.coustomerId);
-
+         
           this.customerSvn.setCustomerIdInStorage(this.coustomerId);
           this.router.navigate(['/play']);
        
@@ -39,7 +40,10 @@ export class LoginComponent implements OnInit {
       }, (error) => {
         this.alert('Could\'nt Log In! Try Again')
       });
-
+      
+    } else {
+      this.router.navigate(['/play']);
+    }
 
   }
 
