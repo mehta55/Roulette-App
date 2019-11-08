@@ -2,6 +2,29 @@
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 8.3.12.
 
+## Views
+
+**Roulette home screen:**
+
+![roulette-home](https://github.com/mehta55/Roulette-App/blob/master/screenshots/roulette-home.png)
+
+**Roulette login screen**
+
+![roulette-login](https://github.com/mehta55/Roulette-App/blob/master/screenshots/roulette-login.png)
+
+**Roulette play screen**
+
+![roulette-play](https://github.com/mehta55/Roulette-App/blob/master/screenshots/roulette-play.png)
+
+**Roulette confirm screen**
+
+![roulette-confirm](https://raw.githubusercontent.com/mehta55/Roulette-App/master/screenshots/roulette-confirm.png)
+
+**Roulette result screen**
+
+![Roulette-result](https://github.com/mehta55/Roulette-App/blob/master/screenshots/roulette-result.png)
+
+
 ## Development server
 
 Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
