@@ -78,7 +78,7 @@ export class RouletteComponent implements OnInit {
   prepareResultModal(rouletteNumber: number, betResult: number) {
     if (betResult > 0) {
       this.resultModal_header = "YOU WON";
-      this.resultModal_body = "Roulette Number is " + rouletteNumber + ". \n You won Rs." + betResult + "! coins";
+      this.resultModal_body = "Roulette Number is " + rouletteNumber + ". \n You won " + betResult + "! coins";
     } else {
       this.resultModal_header = "YOU LOST";
       this.resultModal_body = "Roulette Number is " + rouletteNumber + ". \n You lost " + (betResult * -1) + " coins!";
