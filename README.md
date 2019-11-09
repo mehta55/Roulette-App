@@ -4,7 +4,7 @@ This project was generated with [Angular CLI](https://github.com/angular/angular
 
 ## Views
 
-**Roulette home screen:**
+**Roulette home screen**
 
 ![roulette-home](https://github.com/mehta55/Roulette-App/blob/master/screenshots/roulette-home.png)
 
